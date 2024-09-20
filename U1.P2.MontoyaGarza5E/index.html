@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú de Búsquedas</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-5">
+        <h1 class="text-center">Menú de Búsquedas</h1>
+
+        <div class="text-center mt-3">
+            <button class="btn btn-primary" onclick="realizarBusqueda('lineal')">Búsqueda Lineal</button>
+            <button class="btn btn-primary" onclick="realizarBusqueda('binariaIterativa')">Búsqueda Binaria
+                Iterativa</button>
+            <button class="btn btn-primary" onclick="realizarBusqueda('binariaRecursiva')">Búsqueda Binaria
+                Recursiva</button>
+        </div>
+
+        <div id="contenidoBusqueda" class="mt-5">
+            <div class="mt-5">
+                <table class="table table-bordered">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th>Prueba</th>
+                            <th>Valor Máximo</th>
+                            <th>Valor a Buscar</th>
+                            <th>Tiempo Tomado (ms)</th>
+                            <th>Posición</th>
+                        </tr>
+                    </thead>
+                    <tbody id="resultadosTabla">
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="mt-5">
+                <canvas id="grafica"></canvas>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
